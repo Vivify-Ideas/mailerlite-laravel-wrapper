@@ -1,0 +1,20 @@
+{
+    "name": "vivify-ideas/mailerlite",
+    "description": "Laravel 5 Mailerlite Wrapper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikola Spalevic",
+            "email": "nikola.s@vivifyideas.com"
+        }
+    ],
+    "require": {
+        "mailerlite/mailerlite-api-v2-php-sdk": "^0.1.8",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "VivifyIdeas\\MailerLite\\": "src/"
+        }
+    }
+}
