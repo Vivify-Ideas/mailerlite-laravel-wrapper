@@ -9,8 +9,7 @@
         }
     ],
     "require": {
-        "mailerlite/mailerlite-api-v2-php-sdk": "^0.1.8",
-        "guzzlehttp/guzzle": "^6.2"
+        "mailerlite/mailerlite-api-v2-php-sdk": "^0.1.8"
     },
     "autoload": {
         "psr-4": {

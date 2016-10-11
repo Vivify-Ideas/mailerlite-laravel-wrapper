@@ -31,11 +31,9 @@ class MailerLiteServiceProvider extends ServiceProvider
 
     private function registerMailerLite()
     {
-        $guzzle = new \GuzzleHttp\Client();
-        $guzzleClient = new \Http\Adapter\Guzzle6\Client($guzzle);
-        $this->app->bind('mailerlite', function($app) use ($guzzleClient) {
+        $this->app->bind('mailerlite', function($app) {
             return new MailerLite(
-                config('mailerlite.api_key'), $guzzleClient
+                config('mailerlite.api_key')
             );
         });
     }
